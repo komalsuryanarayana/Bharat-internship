@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" type="text/css" href="tempcss.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Temperature Converter</h1>
+    <div class="converter">
+      <label for="temperature">Temperature:</label>
+      <input type="number" id="temperature" placeholder="Enter temperature">
+      <select id="scale">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+      <button onclick="convertTemperature()">Convert</button>
+      <div class="conversion-result">
+        <label for="converted">Converted:</label>
+        <input type="text" id="converted" placeholder="Converted temperature" readonly>
+        <p id="weather-condition"></p>
+        <p>Gade komal suryanarayana</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="style.js"></script>
+</body>
+</html>
